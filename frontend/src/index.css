@@ -1,0 +1,963 @@
+.central {
+  background: none;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(170%, 40%);
+}
+
+.login {
+  background: rgba(73, 110, 109, 0.2);
+  border-radius: 20%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.login input[type="text"] {
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+}
+
+.login input[type="text"]:focus {
+  border-color: aqua;
+  outline: none;
+}
+
+.login input[type="password"] {
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+}
+
+.login input[type="password"]:focus {
+  border-color: aqua;
+  outline: none;
+}
+
+.login table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.login td {
+  text-align: center;
+}
+
+.login td input {
+  width: 90%;
+  color: white;
+  background: none;
+  border: none;
+  font-family: Verdana;
+  border-radius: 50%;
+}
+
+.login td input:hover {
+  cursor: pointer;
+  background: rgba(100, 163, 163, 0.5);
+}
+
+.subButton {
+  width: 100%;
+  height: 40px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+}
+
+.subButton:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.App a {
+  color: white;
+  width: 100px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 9px;
+  padding-right: 8px;
+}
+.App {
+  background: rgba(73, 110, 109, 0.2);
+  padding-top: 0px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: block;
+  border-radius: 20px;
+  height: 300px;
+  transform: translate(20%, 20%);
+  width: 700px;
+}
+.App nav {
+  margin: 0;
+  background: none;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  background: #222;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.App nav a:hover {
+  background: #111;
+}
+.active {
+  background-color: #4caf50;
+}
+.left-most {
+  border-radius: 20px 0px 0px 0px;
+}
+.right-most {
+  border-radius: 0px 20px 0px 0px;
+}
+#partitioned {
+  padding-left: 19px;
+  letter-spacing: 34px;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    white 70%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 42px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 50px;
+  width: 140px;
+  min-width: 140px;
+}
+.otpform {
+  background: rgba(38, 51, 51, 0.9);
+  width: 50%;
+  height: 50%;
+  transform: translate(35%, 10%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.otpform input[type="text"] {
+  background: none;
+  color: white;
+  transform: translateX(55%);
+}
+.otpform input[type="text"]:focus {
+  outline: none;
+}
+
+.otpform input[type="submit"] {
+  width: 50%;
+  height: 40px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(50%, 100%);
+}
+
+.otpform input[type="submit"]:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.chngpin {
+  background: rgba(38, 51, 51, 0.9);
+  width: 50%;
+  height: 50%;
+  transform: translate(35%, 10%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.chngpin input[type="password"] {
+  transform: translateX(55%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+  padding-top: 20px;
+}
+
+.chngpin input[type="password"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+
+.chngpin select {
+  transform: translateX(70%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+}
+.chngpin select option {
+  color: black;
+}
+
+.chngpin select:focus {
+  outline: none;
+  border-color: aqua;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.chngpin input[type="submit"] {
+  width: 50%;
+  height: 40px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(50%, 50%);
+}
+
+.chngpin input[type="submit"]:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.fndtrns {
+  background: rgba(38, 51, 51, 0.9);
+  width: 50%;
+  height: 50%;
+  transform: translate(35%, 10%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.fndtrns input[type="text"] {
+  transform: translateX(55%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+  padding-top: 15px;
+}
+
+.fndtrns input[type="text"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+
+.fndtrns select {
+  transform: translateX(70%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+}
+.fndtrns select option {
+  color: black;
+}
+
+.fndtrns select:focus {
+  outline: none;
+  border-color: aqua;
+}
+
+.fndtrns input[type="submit"] {
+  width: 50%;
+  height: 40px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(50%, 30%);
+}
+
+.fndtrns input[type="submit"]:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.fndtrns input[type="number"] {
+  transform: translateX(55%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+}
+
+.fndtrns input[type="number"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+
+.amnt input[type="submit"] {
+  position: absolute;
+  transform: translate(-45%, 80%);
+}
+.amnt p {
+  position: absolute;
+  transform: translate(70%, 250%);
+}
+
+#chatbot {
+  position: absolute;
+  transform: translate(1700%, -190%);
+}
+
+.chatbox {
+  background: rgba(38, 51, 51, 0.9);
+  width: 50%;
+  height: 70%;
+  transform: translate(15%, 0%);
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.chatbox ul li {
+  list-style-type: none;
+  padding-top: 5px;
+}
+.chatbox ul li span {
+  display: block;
+  padding-top: px;
+  background: #4caf50;
+  width: 150px;
+  border-radius: 50px;
+  text-align: center;
+  height: 18px;
+  transition: width 0.3s;
+}
+.chatbox ul li span:hover {
+  cursor: pointer;
+  width: 200px;
+}
+
+#answer {
+  position: absolute;
+  background: rgba(38, 70, 51, 0.9);
+  transform: translate(220%, -86%);
+  width: 30%;
+  height: 86%;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.data-form {
+  background: rgba(38, 51, 51, 0.9);
+  width: 30%;
+  height: 100px;
+  transform: translate(15%, 7%);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.data-form select {
+  transform: translateX(30%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+}
+.data-form select option {
+  color: black;
+}
+
+.data-form select:focus {
+  outline: none;
+  border-color: aqua;
+}
+.data-form select:hover {
+  outline: none;
+  border-color: aqua;
+}
+
+.data-form button {
+  width: 50%;
+  height: 40px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(50%, 30%);
+}
+
+.data-form button:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.data-result {
+  background: rgba(38, 51, 51, 0.9);
+  width: 30%;
+  height: 60%;
+  transform: translate(130%, -62%);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.data-result button {
+  width: 50%;
+  height: 40px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(50%, 30%);
+}
+
+.data-result button:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.data-result input[type="text"] {
+  transform: translateX(10%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+}
+
+.data-result input[type="text"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+
+.data-result input[type="text"]:hover {
+  outline: none;
+  border-color: aqua;
+  cursor: default;
+}
+
+.insurance-results {
+  background: rgba(38, 51, 51, 0.9);
+  width: 80%;
+  height: 60%;
+  transform: translate(6%, 0%);
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.insurance-results input[type="text"] {
+  transform: translateX(10%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+  padding-top: 10px;
+}
+
+.insurance-results input[type="text"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+.insurance-results input[type="text"]:hover {
+  outline: none;
+  border-color: aqua;
+  cursor: default;
+}
+
+#userId_insurance {
+  transform: translateX(70%);
+}
+#policy-no {
+  transform: translateX(43%);
+}
+#date-issue {
+  transform: translateX(48%);
+}
+#monthly-due {
+  transform: translateX(50%);
+}
+#policy-type {
+  transform: translateX(56%);
+}
+#policy-term {
+  transform: translateX(55%);
+}
+.navbuttons button {
+  width: 20%;
+  height: 40px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(50%, 30%);
+  position: absolute;
+}
+
+.navbuttons button:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+#prev {
+  transform: translate(350%, -350%);
+}
+#next {
+  transform: translate(350%, -150%);
+}
+
+.navbuttons button:disabled,
+button[disabled] {
+  display: none;
+}
+
+.trans-input {
+  background: rgba(38, 51, 51, 0.9);
+  width: 80%;
+  transform: translate(6%, 0%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.trans-input select {
+  transform: translateX(0%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+}
+.trans-input select option {
+  color: black;
+}
+.trans-input select:focus {
+  outline: none;
+  border-color: aqua;
+}
+.trans-input select:hover {
+  outline: none;
+  border-color: aqua;
+}
+.trans-input input[type="text"] {
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+  padding-top: 10px;
+  border-width: 1px;
+  transform: translateY(-7%);
+}
+
+.trans-input input[type="text"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+.trans-input input[type="text"]:hover {
+  outline: none;
+  border-color: aqua;
+}
+
+.trans-input input[type="date"] {
+  transform: translateY(-7%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  border-width: 1px;
+  color: white;
+  padding-top: 10px;
+}
+
+.trans-input input[type="date"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+.trans-input input[type="date"]:hover {
+  outline: none;
+  border-color: aqua;
+}
+#from-date {
+  transform: translateX(5%);
+}
+#to-date {
+  transform: translateX(10%);
+}
+
+.trans-input button {
+  width: 40px;
+  height: 30px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(100%, 0%);
+  position: absolute;
+}
+
+.trans-input button:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.statement-result {
+  display: inline-block;
+  background: rgba(38, 51, 51, 0.9);
+  width: 80%;
+  height: 150px;
+  transform: translate(6%, 10%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(38, 51, 51, 1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(102, 217, 221);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(105, 247, 247);
+}
+.deposits-home {
+  background: rgba(38, 51, 51, 0.9);
+  width: 85%;
+  display: inline-block;
+  height: 250px;
+  transform: translate(1%, 3%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  margin: 0;
+}
+.deposit-buttons {
+  margin: 0;
+  background: none;
+  padding: 0;
+  transform: translate(-4.5%, -50%);
+  width: 110%;
+  display: flex;
+  background: #222;
+  height: 20px;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+}
+.deposit-buttons button {
+  width: 33.3333%;
+  background: none;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+.deposit-buttons button:hover {
+  background: #111;
+  cursor: pointer;
+}
+
+.open-deposit-form select {
+  transform: translateX(5%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+  width: 40%;
+  padding-top: 15px;
+}
+.open-deposit-form select option {
+  color: black;
+}
+.open-deposit-form select:focus {
+  outline: none;
+  border-color: aqua;
+}
+.open-deposit-form select:hover {
+  outline: none;
+  border-color: aqua;
+}
+.open-deposit-form input[type="text"] {
+  background: none;
+  width: 40%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+  padding-top: 15px;
+  border-width: 1px;
+  transform: translate(5%, -7%);
+}
+
+.open-deposit-form input[type="text"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+.open-deposit-form input[type="text"]:hover {
+  outline: none;
+  border-color: aqua;
+}
+
+.open-deposit-form input[type="submit"] {
+  width: 40%;
+  height: 30%;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(120%, -150%);
+  position: absolute;
+}
+
+.open-deposit-form input[type="submit"]:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.calculate-deposit-form select {
+  transform: translateX(5%);
+  background: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+  width: 40%;
+  padding-top: 15px;
+}
+.calculate-deposit-form select option {
+  color: black;
+}
+.calculate-deposit-form select:focus {
+  outline: none;
+  border-color: aqua;
+}
+.calculate-deposit-form select:hover {
+  outline: none;
+  border-color: aqua;
+}
+.calculate-deposit-form input[type="text"] {
+  background: none;
+  width: 40%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(221, 230, 230);
+  color: white;
+  padding-top: 15px;
+  border-width: 1px;
+  transform: translate(5%, -7%);
+}
+
+.calculate-deposit-form input[type="text"]:focus {
+  outline: none;
+  border-color: aqua;
+}
+.calculate-deposit-form input[type="text"]:hover {
+  outline: none;
+  border-color: aqua;
+}
+
+.calculate-deposit-form input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  font-family: Verdana;
+  box-shadow: inset 0 0 0 0 rgba(100, 163, 163, 0.5);
+  transition: ease-out 0.3s;
+  transform: translate(70%, 50%);
+  position: absolute;
+}
+
+.calculate-deposit-form input[type="submit"]:hover {
+  cursor: pointer;
+  color: white;
+  background: none;
+  box-shadow: inset 300px 0 0 0 rgba(100, 163, 163, 0.5);
+}
+
+.maturity-res {
+  position: absolute;
+  border: 2px solid white;
+  width: 30%;
+  height: 20%;
+  transform: translate(160%, -70%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.view-deposit-result {
+  display: inline-block;
+  background: none;
+  width: 98%;
+  height: 200px;
+  transform: translate(-4.5%, -5%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+#home {
+  position: absolute;
+  transform: translate(1480%, -190%);
+  height: 50px;
+  width: 50px;
+}
+#home:hover {
+  position: absolute;
+  transform: translate(1230%, -170%);
+  height: 60px;
+  width: 60px;
+}
+#chatbot:hover {
+  position: absolute;
+  transform: translate(1350%, -170%);
+  height: 60px;
+  width: 60px;
+}
+#logout {
+  position: absolute;
+  transform: translate(1560%, -80%);
+  height: 50px;
+  width: 50px;
+}
+#logout:hover {
+  position: absolute;
+  transform: translate(1290%, -70%);
+  height: 60px;
+  width: 60px;
+}
+
+.home {
+  display: inline-block;
+  background: none;
+  width: 90%;
+  height: 200px;
+  transform: translate(1%, -5%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+#logo {
+  transform: translate(-10%, 15%);
+}
