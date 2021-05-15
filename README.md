@@ -4,9 +4,10 @@
 
 The project is built with the following:
 
-- React - frontend
+- ReactJS - frontend
+- ThreeJS - Background Effects
 - Node.js - backend
-- MySSQL - Database
+- MySQL - Database
 
 ## Features implemented
 
@@ -18,3 +19,4 @@ The features included in the project are listed below:
 - View Balance
 - Chatbot assistant
 - Manage Insurance policies
+- Fund Transfer
